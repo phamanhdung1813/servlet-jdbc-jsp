@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Default Template place-->
+<decorators defaultdir="/decorators">
+    <excludes>
+        <pattern>/api*</pattern>
+    </excludes>
+
+    <!--Sitemesh Template-->
+    <decorator name="admin" page="admin.jsp">
+        <pattern>/admin*</pattern>
+    </decorator>
+
+    <decorator name="web" page="web.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+
+    <decorator name="login" page="login.jsp">
+        <pattern>/login</pattern>
+    </decorator>
+</decorators>
